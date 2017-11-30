@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<style>
+    /*div{*/
+        /*border: 1px solid #000;*/
+    /*}*/
+</style>
+
+<!--表单 bs3-form -->
+<div class="container">
+
+    <!--图片-->
+    <img class="img-responsive"
+         src="http://a.hiphotos.baidu.com/image/h%3D300/sign=bd3d13ebad86c91717035439f93c70c6/a50f4bfbfbedab642bb8bad3fd36afc378311ede.jpg" alt="">
+    <img class="img-rounded"
+         src="http://a.hiphotos.baidu.com/image/h%3D300/sign=bd3d13ebad86c91717035439f93c70c6/a50f4bfbfbedab642bb8bad3fd36afc378311ede.jpg" alt="">
+    <img class="img-circle"
+         src="http://a.hiphotos.baidu.com/image/h%3D300/sign=bd3d13ebad86c91717035439f93c70c6/a50f4bfbfbedab642bb8bad3fd36afc378311ede.jpg" alt="">
+    <img class="img-thumbnail"
+         src="http://a.hiphotos.baidu.com/image/h%3D300/sign=bd3d13ebad86c91717035439f93c70c6/a50f4bfbfbedab642bb8bad3fd36afc378311ede.jpg" alt="">
+
+    <!--按钮-->
+    <a href="" class="btn btn-default">1</a>
+    <input type="submit" value="2" class="btn btn-primary">
+    <input type="button" value="3" class="btn btn-success">
+    <button class="btn btn-warning btn-lg">4</button>
+    <button class="btn btn-danger btn-sm">5</button>
+    <button class="btn btn-info btn-xs active" disabled>6</button>
+
+
+
+    <form action="" method="POST" class="form-horizontal" role="form">
+        <div class="form-group">
+            <label class="col-xs-2 control-label">用户名</label>
+            <div class="col-xs-10"><input type="text" class="form-control" name="" id="" placeholder="Input..."></div>
+        </div>
+    
+        <div class="form-group">
+            <div class="col-sm-10 col-sm-offset-2">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </form>
+    
+
+    <form action="" method="POST" role="form">
+        <legend>用户登录</legend>
+
+        <div class="form-group has-error">
+            <label class="control-label">用户名</label>
+            <input type="text" class="form-control" name="" id="" placeholder="Input...">
+            <span class="help-block">请输入用户名</span>
+        </div>
+
+        <div class="form-group">
+            <label for="">密码</label>
+            <input type="password" class="form-control" name="" id="" placeholder="Input...">
+        </div>
+
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> 同意
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="city" class="col-sm-2 control-label">City</label>
+
+            <select class="form-control" id="city">
+                <option value="">郑州</option>
+                <option value="">北京</option>
+                <option value="">上海</option>
+                <option value="">杭州</option>
+
+            </select>
+
+        </div>
+
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+
+
+
+<!--布局容器-->
+<div class="container">container</div>
+<div class="container-fluid">container-fluid</div>
+
+<!--栅格布局-->
+<div class="container">
+    <div class="row">
+        <div class="col-xs-4 ">1</div>
+        <div class="col-xs-4 ">2</div>
+        <div class="col-xs-4 ">3</div>
+    </div>
+    <!--断点-->
+    <div class="row">
+        <div class="col-xs-6"></div>
+        <div class="col-xs-6"></div>
+    </div>
+    <!--偏移-->
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-4">1</div>
+    </div>
+</div>
+
+<!--实验网站布局-->
+<div class="container">1</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-2 col-sm-2">导航</div>
+        <div class="col-xs-10 col-sm-8">内容 Lorem ipsum dolor sit amet, consectetur adipisicing elit. At deserunt, doloribus expedita illo iste minima modi rerum suscipit voluptatum. Distinctio labore, repudiandae. At error ex expedita in iste nesciunt, sapiente.</div>
+        <div class="col-sm-2 hidden-xs">广告</div>
+    </div>
+</div>
+<div class="container">3</div>
+
+<!--文本对齐-->
+<p class="text-left">1</p>
+<p class="text-center">2</p>
+<p class="text-right">3</p>
+<p class="text-justify">abcde affadf adfjdkfj kdkfj aaa aaa aaa</p>
+<!--<p class="text-nowrap">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque consectetur deleniti eligendi enim fuga incidunt iure molestias nemo neque quam quia suscipit, voluptas? Alias atque eaque error numquam porro.</p>-->
+
+<!--table-->
+<div class="table-responsive">
+    <table class="table table-striped table-hover table-bordered">
+        <tr>
+            <td>1</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate eius et eveniet libero minus quae sapiente tenetur velit. Aliquid architecto aut consequuntur corporis deserunt earum labore possimus suscipit ut.</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+</div>
+
+<table class="table table-hover">
+	<thead>
+		<tr>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
